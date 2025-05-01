@@ -1,10 +1,13 @@
 import React from 'react'
+import Accordion from './components/Accordion'
+import Maincontent from './components/Maincontent'
 
 function App() {
   return (
-    <div className='w-full h-screen bg-primary flex items-center justify-center'>
-      <h1 className='text-4xl text-white font-bold'>Hello Vite + React + Tailwind CSS!</h1>
-    </div >
+    <div className="relative w-[95%] sm:w-full mx-auto min-h-screen flex flex-col lg:flex-row gap-7 pt-6 pb-18 sm:p-18 lg:px-28 lg:py-18">
+      <Accordion />
+      <Maincontent />
+    </div>
   )
 }
 
