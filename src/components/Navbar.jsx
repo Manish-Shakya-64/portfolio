@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Navbar = ({ currentTab, setCurrentTab }) => {
     const tabs = ['about', 'resume', 'projects', 'contact']
+
+    const handleTabClick = (tab) => {
+        setCurrentTab(tab)
+        sessionStorage.setItem('currentTab', tab)
+    }
+
+    useEffect(() => {
+        const storedTab = sessionStorage.getItem('currentTab')
+        if (storedTab) {
+            setCurrentTab(storedTab)
+        }
+    }, [setCurrentTab])
     return (
         <>
             {/* navbar for desktop */}
@@ -9,7 +21,7 @@ const Navbar = ({ currentTab, setCurrentTab }) => {
                 <ul className='flex items-center justify-center gap-16'>
                     {
                         tabs.map((tab, index) => (
-                            <li key={index} className={`text-white-1 text-[16px] font-semibold cursor-pointer py-4 ${currentTab === tab && 'text-yellow-1'}`} onClick={() => setCurrentTab(tab)}>
+                            <li key={index} className={`text-white-1 text-[16px] font-semibold cursor-pointer py-4 ${currentTab === tab && 'text-yellow-1'}`} onClick={() => handleTabClick(tab)}>
                                 {tab.charAt(0).toUpperCase() + tab.slice(1)}
                             </li>
                         ))
@@ -22,7 +34,7 @@ const Navbar = ({ currentTab, setCurrentTab }) => {
                 <ul className='flex items-center justify-center gap-10'>
                     {
                         tabs.map((tab, index) => (
-                            <li key={index} className={`text-white-1 text-[14px] font-semibold cursor-pointer py-5 ${currentTab === tab && 'text-yellow-1'}`} onClick={() => setCurrentTab(tab)}>
+                            <li key={index} className={`text-white-1 text-[14px] font-semibold cursor-pointer py-5 ${currentTab === tab && 'text-yellow-1'}`} onClick={() => handleTabClick(tab)}>
                                 {tab.charAt(0).toUpperCase() + tab.slice(1)}
                             </li>
                         ))

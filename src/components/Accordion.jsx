@@ -43,7 +43,7 @@ const Accordion = () => {
                     <img src={img} alt="" className='w-22 sm:w-30 lg:w-38' />
                 </div>
                 <div className='flex flex-col items-start justify-center gap-2 sm:gap-4 text-white-1 lg:items-center lg:pb-6'>
-                    <p className='text-xl sm:text-2xl md:text-[26px] font-medium text-nowrap'>Manish Shakya</p>
+                    <p className='text-xl sm:text-2xl md:text-[26px] font-semibold text-nowrap'>Manish Shakya</p>
                     <p className='bg-light-gray-2  text-[10px] sm:text-xs px-4 py-[6px] rounded-[8px] bg-[hsl(240, 1%, 17%)] transition-colors duration-300 hover:bg-[hsl(240, 1%, 25%)]'>
                         Fullstack Developer
                     </p>
