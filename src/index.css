@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -5,14 +6,30 @@
   --color-secondary: hsl(240, 2%, 12%);
   --color-ternary: hsl(0, 0%, 22%);
   --color-yellow-1: hsl(45, 100%, 72%);
+  --color-yellow-2: hsl(35, 100%, 68%);
   --color-black-1: hsl(240, 2%, 20%);
   --color-white-1: hsl(0, 0%, 98%);
   --color-gray: hsl(0, 0%, 84%);
   --color-gray-2: hsla(240, 1%, 17%, 0.7);
   --color-light-gray: hsla(0, 0%, 84%, 0.7);
   --color-light-gray-2: rgba(43, 43, 44, 0.75);
+  --color-bittersweet-shimmer: hsl(0, 43%, 51%);
   --shadow-s1: 0 24px 80px hsla(0, 0%, 0%, 0.25);
   --shadow-s2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
+}
+
+:root {
+  --bg-gradient-jet: linear-gradient(
+      to bottom right,
+      hsla(240, 1%, 18%, 0.251) 0%,
+      hsla(240, 2%, 11%, 0) 100%
+    ),
+    hsl(240, 2%, 13%);
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50%
+  );
 }
 
 body {
@@ -21,4 +38,23 @@ body {
   box-sizing: border-box;
   color: hsl(0, 0%, 84%);
   background-color: hsl(0, 0%, 7%);
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-gradient {
+  @apply bg-gradient-to-r from-yellow-1 to-yellow-2;
+}
+
+.service-card {
+  position: relative;
+  background: var(--bg-gradient-onyx);
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: 0;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
 }
