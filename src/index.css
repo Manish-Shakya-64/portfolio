@@ -32,6 +32,10 @@
   );
 }
 
+::selection {
+  @apply bg-yellow-1 text-secondary;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -55,6 +59,41 @@ body {
   position: absolute;
   inset: 1px;
   z-index: 0;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+}
+
+.submit-btn {
+  position: relative;
+  background: var(--bg-gradient-onyx);
+  cursor: pointer;
+}
+
+.submit-btn::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: -10;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+}
+
+.submit-btn:disabled {
+  filter: grayscale(60%);
+  cursor: not-allowed;
+}
+
+.icon-box {
+  position: relative;
+  background: var(--bg-gradient-onyx);
+  z-index: 1;
+}
+
+.icon-box::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: -10;
   background: var(--bg-gradient-jet);
   border-radius: inherit;
 }

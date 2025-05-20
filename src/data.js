@@ -107,3 +107,94 @@ export const services = [
     icon: backendIcon,
   },
 ];
+
+export const experiences = {
+  name: "Experience",
+  items: [
+    {
+      id: 1,
+      position: "Software Intern",
+      company: "Arastu Systems Pvt. Ltd.",
+      duration: "Jan, 2025 — Present",
+      durationLabel: "4 mos",
+      location: "Ahmedabad, Gujarat, India",
+      responsibilities: [
+        "Learned about the basics of C# and .NET Framework.",
+        "Learned about the basics of SQL Server and Entity Framework.",
+        "Learned about the basics of ASP.NET MVC and ASP.NET Web API.",
+        "Developed new features and transformed UI designs into fully functional user interfaces.",
+        "Developed a web application for a client using ASP.NET MVC and ASP.NET Web API.",
+      ],
+    },
+    {
+      id: 2,
+      position: "Full Stack Intern",
+      company: "Syndell Technologies",
+      duration: "May, 2024 — Aug, 2024",
+      durationLabel: "4 mos",
+      location: "Ahmedabad, Gujarat, India",
+      responsibilities: [
+        "Developed new features and implemented UI designs into code using React and Tailwind CSS.",
+        "Designed and created custom e-form features including scrolling features and data entries.",
+        "Integrated Google and Facebook sign-in for user authentication.",
+        "Integrated APIs for seamless data communication and backend functionality.",
+        "Collaborated with other developers and backend team to deliver features.",
+        "Participated in team meetings to discuss new features and project updates.",
+        "Ensured smooth functionality and user-friendly experiences throughout the app.",
+        "Performed code review and deployed the app in Playstore and Appstore.",
+      ],
+    },
+    {
+      id: 1,
+      position: "Summer Intern",
+      company: "Arastu Systems Pvt. Ltd.",
+      duration: "June, 2022 — July, 202",
+      durationLabel: "2 mos",
+      location: "Ahmedabad, Gujarat, India",
+      responsibilities: [
+        "Learned about the basics of React and Node.",
+        "Learned about the basics of MongoDB and MySQL.",
+        "Learned about the basics of Git and GitHub.",
+        "Developed new features and transformed UI designs into fully functional user interfaces.",
+      ],
+    },
+  ],
+};
+
+export const education = {
+  name: "Education",
+  items: [
+    {
+      id: 1,
+      position: "Government MCA College Maninagar (GTU)",
+      company: "Master of Computer Applications",
+      duration: "2023 — 2025",
+      durationLabel: "8.5 CGPA",
+      location: "Ahmedabad, Gujarat, India",
+    },
+    {
+      id: 2,
+      position: "Navgujarat College of Computer Applicatioons (GU)",
+      company: "Bachelor of Computer Applications",
+      duration: "2020 — 2023",
+      durationLabel: "7.98 CGPA",
+      location: "Ahmedabad, Gujarat, India",
+    },
+    {
+      id: 3,
+      position: "Vivekanand Hindi Hign School",
+      company: "HSC",
+      duration: "2018 — 2020",
+      durationLabel: "78%",
+      location: "Ahmedabad, Gujarat, India",
+    },
+    {
+      id: 4,
+      position: "Shivam Vidhyalaya",
+      company: "SSC",
+      duration: "2016 — 2018",
+      durationLabel: "74%",
+      location: "Ahmedabad, Gujarat, India",
+    },
+  ],
+};

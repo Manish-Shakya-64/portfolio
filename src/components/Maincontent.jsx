@@ -4,6 +4,7 @@ import About from './About'
 import { Skills } from '../data'
 import ImageSlider from './ImageSlider'
 import Contact from './Contact'
+import Resume from './Resume'
 
 const Maincontent = () => {
     const [currentTab, setCurrentTab] = useState('about')
@@ -12,7 +13,7 @@ const Maincontent = () => {
             <Navbar currentTab={currentTab} setCurrentTab={setCurrentTab} />
             <div className='w-full h-full'>
                 {currentTab === 'about' && <About />}
-                {currentTab === 'resume' && <div className='text-2xl text-white'>Projects</div>}
+                {currentTab === 'resume' && <Resume />}
                 {currentTab === 'projects' && <div className='text-2xl text-white'>Contact</div>}
                 {currentTab === 'contact' && <Contact />}
             </div>
