@@ -130,7 +130,7 @@ export const experiences = {
       id: 2,
       position: "Full Stack Intern",
       company: "Syndell Technologies",
-      duration: "May, 2024 — Aug, 2024",
+      duration: "May, 2023 — Aug, 2023",
       durationLabel: "4 mos",
       location: "Ahmedabad, Gujarat, India",
       responsibilities: [
@@ -148,7 +148,7 @@ export const experiences = {
       id: 1,
       position: "Summer Intern",
       company: "Arastu Systems Pvt. Ltd.",
-      duration: "June, 2022 — July, 202",
+      duration: "June, 2022 — July, 2022",
       durationLabel: "2 mos",
       location: "Ahmedabad, Gujarat, India",
       responsibilities: [
