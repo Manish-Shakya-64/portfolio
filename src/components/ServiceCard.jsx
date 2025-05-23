@@ -1,7 +1,6 @@
 import React from 'react'
 
 const ServiceCard = ({ info }) => {
-    console.log(info)
     return (
         <div
             className='service-card bg-gradient-2 flex gap-4 items-start rounded-2xl shadow-s2 px-4 py-6 md:px-7 md:py-8'>
