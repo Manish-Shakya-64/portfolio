@@ -5,6 +5,7 @@ import { Skills } from '../data'
 import ImageSlider from './ImageSlider'
 import Contact from './Contact'
 import Resume from './Resume'
+import Projects from './Projects'
 
 const Maincontent = () => {
     const [currentTab, setCurrentTab] = useState('about')
@@ -14,7 +15,7 @@ const Maincontent = () => {
             <div className='w-full h-full'>
                 {currentTab === 'about' && <About />}
                 {currentTab === 'resume' && <Resume />}
-                {currentTab === 'projects' && <div className='text-2xl text-white'>Contact</div>}
+                {currentTab === 'projects' && <Projects />}
                 {currentTab === 'contact' && <Contact />}
             </div>
         </section>
