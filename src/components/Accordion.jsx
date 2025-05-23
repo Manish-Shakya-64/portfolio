@@ -79,8 +79,8 @@ export default Accordion
 
 const ConttactCard = ({ title, info, icon, type, url = null }) => {
     return (
-        <li className='w-full sm:w-1/2 lg:w-full flex items-center gap-2 sm:gap-4 lg:gap-3 transition-transform duration-800'>
-            <div className='flex items-center text-xl sm:text-2xl p-[10px] shadow-s2 text-yellow-1 bg-black-1 rounded-xl transition-colors duration-300 hover:bg-yellow-1 hover:text-black-1'>
+        <li className='w-full sm:w-1/2 lg:w-full flex items-center gap-2 sm:gap-4 lg:gap-4 transition-transform duration-800'>
+            <div className='icon-box flex items-center justify-center text-xl sm:text-2xl h-[46px] w-[46px] shadow-s2 text-yellow-1 bg-black-1 rounded-xl transition-colors duration-300'>
                 {icon}
             </div>
             <a
