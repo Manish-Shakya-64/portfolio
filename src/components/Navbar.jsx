@@ -21,7 +21,7 @@ const Navbar = ({ currentTab, setCurrentTab }) => {
                 <ul className='flex items-center justify-center gap-16'>
                     {
                         tabs.map((tab, index) => (
-                            <li key={index} className={`text-white-1 text-[16px] font-semibold cursor-pointer py-4 ${currentTab === tab && 'text-yellow-1'}`} onClick={() => handleTabClick(tab)}>
+                            <li key={index} className={`text-white-1 text-[16px] font-semibold cursor-pointer py-4 hover:text-light-gray transition-all duration-300 ${currentTab === tab && 'text-yellow-1 hover:text-yellow-1'}`} onClick={() => handleTabClick(tab)}>
                                 {tab.charAt(0).toUpperCase() + tab.slice(1)}
                             </li>
                         ))

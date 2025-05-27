@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
-const SectionHeader = () => {
-    const [currentTab, setCurrentTab] = useState('about')
+const SectionHeader = ({ currentTab }) => {
 
-    useEffect(() => {
-        const title = sessionStorage.getItem('currentTab')
-        setCurrentTab(title)
-    }, [setCurrentTab])
 
     return (
         <div className="heading flex flex-col gap-1 md:gap-4 mb-6">

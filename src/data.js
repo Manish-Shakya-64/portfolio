@@ -131,7 +131,7 @@ export const experiences = {
       position: "Full Stack Intern",
       company: "Syndell Technologies",
       duration: "May, 2023 — Aug, 2023",
-      durationLabel: "4 mos",
+      durationLabel: "6 mos",
       location: "Ahmedabad, Gujarat, India",
       responsibilities: [
         "Developed new features and implemented UI designs into code using React and Tailwind CSS.",
