@@ -6,11 +6,11 @@ export default function Timeline({ experiences }) {
     return (
         <div className="relative">
             {/* Vertical line from the center of the icon */}
-            <div className="absolute left-[20px] md:left-[24px] top-0 bottom-0 w-px bg-ternary z-0"></div>
+            <div className="absolute left-[18px] sm:left-[24px] top-1 bottom-0 w-px bg-ternary z-0"></div>
 
             {/* Heading with icon - positioned in flow with timeline */}
             <div className="flex items-center gap-3 mb-10 relative z-10">
-                <div className="icon-box  rounded-xl w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center shadow-s2">
+                <div className="icon-box rounded-lg sm:rounded-xl w-[36px] h-[36px] sm:w-[48px] sm:h-[48px] flex items-center justify-center shadow-s2">
                     <IoBookOutline className="text-yellow-400 h-5 w-5" />
                 </div>
                 <SectionSubHeading title={experiences?.name} />
@@ -23,7 +23,7 @@ export default function Timeline({ experiences }) {
                     className={`relative pl-12 ${index < experiences?.items?.length - 1 ? 'mb-6 md:mb-10' : ''}`}
                 >
                     {/* Timeline dot aligned with the line */}
-                    <div className="absolute left-[11px] md:left-[16px] top-0 h-[16px] w-[16px] rounded-full bg-ternary flex items-center justify-center z-10">
+                    <div className="absolute left-[0.675rem] sm:left-[16px] top-0 h-[16px] w-[16px] rounded-full bg-ternary flex items-center justify-center z-10">
                         <div className="h-[8px] w-[8px] bg-yellow-2 rounded-full"></div>
                     </div>
 
