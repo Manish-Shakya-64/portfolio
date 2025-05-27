@@ -2,12 +2,13 @@ import React from 'react'
 import ServiceCard from './ServiceCard'
 import { services } from '../data'
 import SectionHeader from './SectionHeader'
+import SectionSubHeading from './SectionSubHeading'
 
 const About = () => {
 
     return (
         <div className='w-full p-5 md:p-8 transition-all duration-1000 ease-in-out'>
-            <SectionHeader />
+            <SectionHeader currentTab={'about'} />
             <div>
                 <div className="description flex flex-col gap-3 mt-3 text-gray-1 text-[15px] text-xl text-justify">
                     <p>
@@ -19,6 +20,8 @@ const About = () => {
                 </div>
             </div>
             <div className="heading flex flex-col gap-1 md:gap-4 mt-10">
+                <SectionSubHeading title="What I'm Doing" classes="" />
+
                 <div className="description grid grid-cols-1 md:grid-cols-2 gap-x-7 gap-y-6 mt-3">
                     {
                         services.map((item, index) => (

@@ -8,7 +8,7 @@ import SectionHeader from './SectionHeader';
 const Resume = () => {
     return (
         <div className='w-full p-5 md:p-8 transition-all duration-1000 ease-in-out'>
-            <SectionHeader />
+            <SectionHeader currentTab={'resume'} />
             <Timeline experiences={education} />
             <br />
             <br />

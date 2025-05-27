@@ -17,7 +17,7 @@ const Projects = () => {
     ]
     return (
         <div className='w-full p-5 md:p-8 transition-all duration-1000 ease-in-out'>
-            <SectionHeader />
+            <SectionHeader currentTab={'projects'} />
             <DropDown items={['All', 'Web', 'Mobile', 'Desktop']} selected={selected} setSelected={setSelected} classes='block md:hidden z-20' />
             <SelectList items={['All', 'Web', 'Mobile', 'Desktop']} selected={selected} setSelected={setSelected} classes='hidden md:block mt-2' />
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
