@@ -5,7 +5,7 @@ import Maincontent from './components/Maincontent'
 function App() {
 
   return (
-    <div className="relative w-[95%] sm:w-full mx-auto min-h-screen flex flex-col lg:flex-row gap-7 pt-6 pb-18 sm:p-18 md:px-18 lg:px-28 lg:py-18">
+    <div className="relative w-[95%] sm:w-full mx-auto min-h-screen flex flex-col xl:flex-row gap-7 pt-6 pb-18 sm:p-18 md:px-10 xl:px-28 xl:py-18">
       <Accordion />
       <Maincontent />
     </div>

@@ -5,6 +5,7 @@ import SectionSubHeading from './SectionSubHeading';
 import { db } from '../../firebase';
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import Toast from './Toast';
+import FadeBox from './animations/FadeBox';
 
 
 
@@ -64,10 +65,10 @@ const Contact = () => {
     };
 
     return (
-        <>
+        <FadeBox>
             {toast && <Toast message={toast.message} type={toast.type} onClose={() => setToast(null)} />}
             <div className='w-full p-5 md:p-8 transition-all duration-1000 ease-in-out'>
-                <SectionHeader currentTab={'about'} />
+                <SectionHeader currentTab={'contact'} />
                 <div>
                     <figure className='w-full h-full '>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1452.5542319649055!2d72.63063275441834!3d23.002406488678236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1747675538254!5m2!1sen!2sin" width="100%" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='rounded-2xl grayscale-100 invert-100 h-[230px] sm:h-[300px] md:h-[400px] border-1 border-gray-1'></iframe>
@@ -141,7 +142,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div >
-        </>
+        </FadeBox>
     )
 }
 

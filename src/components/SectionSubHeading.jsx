@@ -2,7 +2,7 @@ import React from 'react'
 
 const SectionSubHeading = ({ title, classes = '' }) => {
     return (
-        <h1 className={`text-2xl sm:text-3xl md:text-[24px] font-semibold text-white-1 ${classes}`}>{title}</h1>
+        <h1 className={`text-xl sm:text-[22px] xl:text-2xl font-semibold text-white-1 ${classes}`}>{title}</h1>
     )
 }
 
